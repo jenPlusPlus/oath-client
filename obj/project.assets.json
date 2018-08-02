@@ -2,6 +2,52 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "IdentityModel/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/IdentityModel.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/IdentityModel.dll": {}
+        }
+      },
+      "IdentityServer4/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "IdentityModel": "3.0.0",
+          "Microsoft.AspNetCore.Authentication": "2.0.1",
+          "Microsoft.AspNetCore.Authentication.Cookies": "2.0.1",
+          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "2.0.1",
+          "Microsoft.AspNetCore.Cors": "2.0.1",
+          "Microsoft.Extensions.Caching.Memory": "2.0.0",
+          "Microsoft.Extensions.Logging": "2.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "2.0.0",
+          "System.IdentityModel.Tokens.Jwt": "5.1.5",
+          "System.Security.Cryptography.Cng": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/IdentityServer4.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/IdentityServer4.dll": {}
+        }
+      },
+      "IdentityServer4.AspNetIdentity/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "IdentityServer4": "2.1.1",
+          "Microsoft.AspNetCore.Identity": "2.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/IdentityServer4.AspNetIdentity.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/IdentityServer4.AspNetIdentity.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -4777,6 +4823,47 @@
     }
   },
   "libraries": {
+    "IdentityModel/3.0.0": {
+      "sha512": "EKMOOUUqDzBR3goiA8eWJ1aQBz1AMfKVxxR7XnzAf5qq2k9vr6GT91SyHmzC14KINpNNJOrbmowXf5S04gQ0ZA==",
+      "type": "package",
+      "path": "identitymodel/3.0.0",
+      "files": [
+        "identitymodel.3.0.0.nupkg.sha512",
+        "identitymodel.nuspec",
+        "lib/net452/IdentityModel.dll",
+        "lib/net452/IdentityModel.xml",
+        "lib/net461/IdentityModel.dll",
+        "lib/net461/IdentityModel.xml",
+        "lib/netstandard1.4/IdentityModel.dll",
+        "lib/netstandard1.4/IdentityModel.xml",
+        "lib/netstandard2.0/IdentityModel.dll",
+        "lib/netstandard2.0/IdentityModel.xml"
+      ]
+    },
+    "IdentityServer4/2.1.1": {
+      "sha512": "SeSGMMAT/FEnir5zxDrdDvenxtuPVAxTAUNYtYjVl40sAKsjwJJ9GE9kSv9QI3trU8vLft5ApRFQhOYAt6Itug==",
+      "type": "package",
+      "path": "identityserver4/2.1.1",
+      "files": [
+        "identityserver4.2.1.1.nupkg.sha512",
+        "identityserver4.nuspec",
+        "lib/netstandard2.0/IdentityServer4.dll",
+        "lib/netstandard2.0/IdentityServer4.pdb",
+        "lib/netstandard2.0/IdentityServer4.xml"
+      ]
+    },
+    "IdentityServer4.AspNetIdentity/2.1.0": {
+      "sha512": "r1QXwLW11a4+BxTy/2GUFzAYLAulKQhMSDs/fFCai6r1oH0btv6Dw7lvDNyh8wn0oeonMQvxxzJKzLbMqYZcNw==",
+      "type": "package",
+      "path": "identityserver4.aspnetidentity/2.1.0",
+      "files": [
+        "identityserver4.aspnetidentity.2.1.0.nupkg.sha512",
+        "identityserver4.aspnetidentity.nuspec",
+        "lib/netstandard2.0/IdentityServer4.AspNetIdentity.dll",
+        "lib/netstandard2.0/IdentityServer4.AspNetIdentity.pdb",
+        "lib/netstandard2.0/IdentityServer4.AspNetIdentity.xml"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "rMDlyePoxggkmN/qgha1+BR2Uy+dOr38xKCQOPfVNKGY07R2nYJGMTKJFE1XFgwD70RYUNazf2fqutjJF18XgQ==",
       "type": "package",
@@ -12536,6 +12623,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "IdentityServer4.AspNetIdentity >= 2.1.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Authentication.Cookies >= 2.1.1",
       "Microsoft.AspNetCore.Authentication.OpenIdConnect >= 2.1.1",
@@ -12583,6 +12671,10 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "IdentityServer4.AspNetIdentity": {
+            "target": "Package",
+            "version": "[2.1.0, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",

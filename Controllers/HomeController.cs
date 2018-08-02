@@ -20,6 +20,7 @@ namespace IdeaBox.Controllers
         [Authorize]
         public IActionResult About()
         {
+            // var chalRes = new ChallengeResult("oidc");
             ViewData["Message"] = "Your application description page.";
 
             return View();

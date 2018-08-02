@@ -1,4 +1,3 @@
-/Users/jenwoodson/Practice/IdeaBox/bin/Debug/netcoreapp2.1/app.db
 /Users/jenwoodson/Practice/IdeaBox/bin/Debug/netcoreapp2.1/IdeaBox.deps.json
 /Users/jenwoodson/Practice/IdeaBox/bin/Debug/netcoreapp2.1/IdeaBox.runtimeconfig.json
 /Users/jenwoodson/Practice/IdeaBox/bin/Debug/netcoreapp2.1/IdeaBox.runtimeconfig.dev.json
@@ -38,3 +37,5 @@
 /Users/jenwoodson/Practice/IdeaBox/obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/_ViewImports.g.cshtml.cs
 /Users/jenwoodson/Practice/IdeaBox/obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/Account/Login.g.cshtml.cs
 /Users/jenwoodson/Practice/IdeaBox/obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/Account/_ViewImports.g.cshtml.cs
+/Users/jenwoodson/Practice/IdeaBox/obj/Debug/netcoreapp2.1/Razor/Areas/Identity/Pages/Account/ExternalLogin.g.cshtml.cs
+/Users/jenwoodson/Practice/IdeaBox/bin/Debug/netcoreapp2.1/app.db
